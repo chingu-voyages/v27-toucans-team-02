@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <div class="form">
+                <form action="">
+                    <div class="form-g">
+                        <label for="">Car Price: <span>?</span></label>
+                        <input id="car-price" type="range">
+                    </div>
+                    <div class="form-g">
+                        <label for="">Sales Tax (%):</label>
+                        <input id="sales-tax" type="text">
+                    </div>
+                    <div class="form-g">
+                        <label for="">Down Payment ($):</label>
+                        <input id="down-payment" type="text">
+                    </div>
+                    <div class="form-g">
+                        <label for="">Trade In Value ($):</label>
+                        <input id="trade-value" type="text">
+                    </div>
+                    <div class="form-g">
+                        <label for="">Loan Term (months):</label>
+                        <input id="loan-term" type="text">
+                    </div>
+                    <div class="form-g">
+                        <label for="">Interest Rate (%):</label>
+                        <input id="interest-rate" type="text">
+                    </div>
+                    <div>
+                        <button id="clear-btn" style="margin-right: 20%;">Clear</button>
+                        <button id="submit-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="img">
+                <img src="https://cdn.dribbble.com/users/1061799/screenshots/9236252/media/1054a91b476cbcbabd47d202c0c92e58.png" alt="">
+                <div class="r1" >
+                    <span class="r2">RESULT/TEXT</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="https://unpkg.com/jquery"></script>
+<script src="index.js"></script>
 </html>
