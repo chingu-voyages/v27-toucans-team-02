@@ -1,67 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mobile.css" />
     <title>Car Loan Calculator</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet" />
 </head>
 
-<header class="mainHeader">
-    <h1 class="mainTitle">Car Loan Calculator</h1>
-</header>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="fig"></div>
-            <div class="form">
-                <form action="">
-                    <div class="form-g">
-                        <label for="">Car Price: <span>?</span></label>
-                        <input id="car-price" type="text">
-                    </div>
-                    <div class="form-g">
-                        <label for="">Sales Tax (%):</label>
-                        <input id="sales-tax" type="text">
-                    </div>
-                    <div class="form-g">
-                        <label for="">Down Payment ($):</label>
-                        <input id="down-payment" type="text">
-                    </div>
-                    <div class="form-g">
-                        <label for="">Trade In Value ($):</label>
-                        <input id="trade-value" type="text">
-                    </div>
-                    <div class="form-g">
-                        <label for="">Loan Term (months):</label>
-                        <input id="loan-term" type="text">
-                    </div>
-                    <div class="form-g">
-                        <label for="">Interest Rate (%):</label>
-                        <input id="interest-rate" type="text">
-                    </div>
-                    <div>
-                        <button id="clear-btn" style="margin-right: 20%;">Clear</button>
-                        <button id="submit-btn">Submit</button>
-                    </div>
-                </form>
-            </div>
-            <div class="r-container">
-                <div class="img">
-                    <h1>Get the loan of your dreams</h1>
-                    <img src="mm.svg" alt="">
+    <div class="box">
+        <div class="cont">
+            <div class="container">
+                <div class="header item0">
+                    <header class="mainHeader">
+                        <h1 class="mainTitle">Car Loan Calculator</h1>
+                    </header>
                 </div>
-                <div class="r1" >
-                    <span>MONTH PAYMENT: $$$</span>
-                    <span>INTEREST TO PAY: $$$</span>
-                    <span>LOAN TERM (YEARS): ###</span>
-                    <span>FIRST PAYMENT: ###</span>
-                    <span>LAST PAYMENT: ###</span>
+                <div class="main item1">
+                    <form action="">
+                        <div class="form-g">
+                            <label for="">Loan Amount</label>
+                            <input id="car-price" type="text" />
+                        </div>
+                        <div class="form-g">
+                            <label for="">Loan Term (months):</label>
+                            <input id="loan-term" type="text" />
+                        </div>
+                        <div class="form-g">
+                            <label for="">Interest Rate (%):</label>
+                            <input id="interest-rate" type="text" />
+                        </div>
+                        <div class="btns">
+                            <button id="clear-btn" style="margin-right: 20%">Clear</button>
+                            <button id="submit-btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="r-container item2">
+                    <div class="img">
+                        <h1 class="img-title">Get the loan of your dreams</h1>
+                        <img src="mm.svg" alt="" />
+                    </div>
+                </div>
+                <div class="item3">
+                    <div class="calc">
+                        <span>Monthly Payment: $$$</span>
+                        <span>Total Interest: $$$</span>
+                        <span>Total Amount: $$$</span>
+                    </div>
+                </div>
+                <div class="footer item4" style="background-color: magenta;">
+                    <footer>Footer</footer>
                 </div>
             </div>
         </div>
+        
     </div>
 </body>
 <script src="https://unpkg.com/jquery"></script>
