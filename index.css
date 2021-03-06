@@ -191,7 +191,8 @@ img {
   }
 }
 
-@media (min-width: 600px) {
+/*===== Tablets Portrait =====*/
+@media only screen and (min-width: 600px) and (orientation: portrait) {
 
   .mainHeader {
     font-size: 3.3vw;
@@ -243,3 +244,66 @@ img {
     z-index: 3;
   }
 }
+
+/*===== Laptops, Desktops, Tablets Landscape =====*/
+@media only screen and (min-width: 1024px) and (orientation: landscape){
+  
+  .mainHeader {
+    font-size: 1.8vw;
+    height: 100%;
+    max-height: 8vw;
+  }
+
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      ". . . ."
+      ". main img ."
+      ". main calc ."
+      ". . . ."
+      "footer footer footer footer";
+    grid-template-columns: auto 24% 24% auto;
+    grid-template-rows: 8% auto 38% 20% auto 5%;
+    height: 100vh;
+  }
+
+  .img-container {
+    justify-content: space-evenly;
+    border-radius: 0 15px 0 0;
+    box-shadow: 12px 8px 0px 2px #0000004d;
+    border-bottom: 0.5vw solid #b580fa;
+    /*border-left: 10px double #fac980c5;*/
+  }
+  .img-title {
+    font-size: 1.9vw;
+    width: 95%;
+    margin-top: 25px;
+  }
+
+  .form {
+    border-radius: 15px 0 0 15px;
+    box-shadow: 8px 12px 0px 2px #0000004d;
+  }
+  .form-g {
+    font-size: 1.3vw;
+  }
+  input {
+    font-size: 1.7vw;
+  }
+  #submit-btn,
+  #clear-btn {
+    font-size: 1.2vw;
+    width: 25%;
+  }
+
+  .results {
+    border-radius: 0 0 15px 0;
+    font-size: 1.3vw;
+    text-align: center;
+    box-shadow: 12px 12px 0px 2px #0000004d;
+    z-index: 3;
+  }
+}
+
+
