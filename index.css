@@ -87,6 +87,16 @@ input {
   margin-top: 3%;
 }
 
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 input:focus {
   background-color: #ceac98;
   transition: all 0.15s ease-in-out 0s;
@@ -299,7 +309,7 @@ img {
 
   .results {
     border-radius: 0 0 15px 0;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     text-align: center;
     box-shadow: 12px 12px 0px 2px #0000004d;
     z-index: 3;
