@@ -18,10 +18,21 @@
 
 document.getElementById("loan-form").addEventListener("submit", calculateResults);
 
+// ** First Try **
+// function reset() {
+//     document.querySelectorAll(".title").innerHTML = 0;
+//     console.log("reset ran");
+// }
+
+
+// ** Second Try **
 function reset() {
-    document.querySelectorAll("h4").innerHTML = '';
-    console.log("reset ran");
+    const elements = document.querySelectorAll(".title");
+    elements.forEach((el) => {
+      el.innerHTML = "0";
+    });
 }
+
 
 function calculateResults(e) {
     // Linking to inputs

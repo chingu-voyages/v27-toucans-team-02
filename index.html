@@ -18,7 +18,7 @@
             </header>
         </div>
         <div class="form item1">
-            <form action="">
+            <form action="" id="loan-form">
                 <div class="form-g">
                     <label for="">Loan Amount:</label>
                     <input id="car-price" type="text" />
@@ -32,8 +32,8 @@
                     <input id="interest-rate" type="text" />
                 </div>
                 <div class="btns">
-                    <button id="clear-btn" style="margin-right: 20%">Clear</button>
-                    <button id="submit-btn">Submit</button>
+                    <button id="clear-btn" onclick="reset()" style="margin-right: 20%">Clear</button>
+                    <button id="submit-btn" type="submit">Submit</button>
                 </div>
             </form>
         </div>
@@ -54,7 +54,8 @@
         </div>
     </div>
 </body>
-<script src="https://unpkg.com/jquery"></script>
 <script src="index.js"></script>
+<script src="https://unpkg.com/jquery"></script>
+
 
 </html>
