@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #30427d;
+  background-color: #1e2855;
 }
 
 /*===== GRID Design =====*/
@@ -19,9 +19,7 @@ body {
 .item2 {
   grid-area: img;
 }
-.item3 {
-  grid-area: calc;
-}
+.item3 {grid-area: calc;}
 .item4 {
   grid-area: footer;
 }
@@ -37,24 +35,16 @@ body {
     ". . ."
     "footer footer footer";
   grid-template-columns: 6% auto 6%;
-  grid-template-rows: auto 10% auto 60% 20% 10% auto;
+  grid-template-rows: auto 10% auto 60% 30% 10% auto;
 }
 
 /*===== Form Section =====*/
 .form {
   height: 100%;
-  background: #6a3093; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    220deg,
-    #6d54da,
-    #6045d6
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    110deg,
-    #6d54da,
-    #6045d6
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+  background: #3711b3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3711b3, #2c06a7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3711b3, #2c06a7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
 }
 
 form {
@@ -71,7 +61,7 @@ form {
   align-items: left;
   justify-content: space-between;
   font-size: 3.8vw;
-  font-weight: 600;
+  font-weight: 400;
   color: #ebeff0;
   width: 60%;
 }
@@ -83,8 +73,9 @@ input {
   border-bottom: 2px solid rgb(230, 225, 225);
   width: 100%;
   font-size: 4.2vw;
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 3%;
+  color: rgb(26, 25, 25);
 }
 
 input[type=number] {
@@ -98,9 +89,11 @@ input::-webkit-inner-spin-button {
 }
 
 input:focus {
-  background-color: #ceac98;
-  transition: all 0.15s ease-in-out 0s;
+  background-color: #fce3d5;
+  transition: all 0.2s ease 0s;
   outline: 0;
+  border: 3px solid rgba(0, 0, 0, 0.35);
+  color: black
 }
 
 /*===== IMG Container =====*/
@@ -117,11 +110,11 @@ input:focus {
 .img-title {
   display: inline-block;
   margin-top: 3%;
-  color: #6d54da;
+  color: #3711b3;
   text-align: center;
-  font-size: 7.5vw;
+  font-size: 8vw;
   margin-bottom: -7%;
-  text-shadow: 0px 0px 1px rgba(155, 102, 253, 0.8);
+  font-weight: 400;
 }
 
 img {
@@ -140,6 +133,7 @@ img {
   background-color: #f5f2f0;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 0 0 3% 3%;
+  font-weight: 700;
 }
 
 /*===== Buttons =====*/
@@ -154,9 +148,9 @@ img {
 #clear-btn {
   font-size: 2.8vw;
   width: 20%;
-  color: #ebeff0 !important;
+  color: black !important;
   text-transform: uppercase;
-  background: #c73d5b;
+  background: #F4F5F1;
   padding: 3.5%;
   border-radius: 5%;
   border: none;
@@ -165,14 +159,24 @@ img {
 }
 #submit-btn:hover,
 #clear-btn:hover {
-  background: #c01c40;
+  background: #aa0428;
+}
+
+footer {
+  background-color: #f5f2f0;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #3711b3;
 }
 
 /*===== Header Styles =====*/
 
 .mainHeader {
   background-color: #f5f2f0;
-  height: 80px;
+  height: 70px;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -189,6 +193,7 @@ img {
   animation-fill-mode: forwards;
   bottom: 0;
   transform: translate(0, 100%);
+  font-weight: 500;
 }
 
 @keyframes showTopText {
@@ -265,6 +270,11 @@ img {
     max-height: 8vw;
   }
 
+  .item4 {
+    grid-area: footer;
+    align-self: end;
+  }
+
   .container {
     display: grid;
     grid-template-areas:
@@ -272,10 +282,9 @@ img {
       ". . . ."
       ". main img ."
       ". main calc ."
-      ". . . ."
       "footer footer footer footer";
     grid-template-columns: auto 24% 24% auto;
-    grid-template-rows: 8% auto 38% 20% auto 5%;
+    grid-template-rows: 10% auto 38% 20% auto;
     height: 100vh;
   }
 
@@ -283,7 +292,6 @@ img {
     justify-content: space-evenly;
     border-radius: 0 15px 0 0;
     box-shadow: 12px 8px 0px 2px #0000004d;
-    border-bottom: 0.5vw solid #b580fa;
     /*border-left: 10px double #fac980c5;*/
   }
   .img-title {
@@ -304,8 +312,9 @@ img {
   }
   #submit-btn,
   #clear-btn {
-    font-size: 1.2vw;
-    width: 25%;
+    font-size: 0.8vw;
+    width: 20%;
+    padding: 3.5%;
   }
 
   .results {

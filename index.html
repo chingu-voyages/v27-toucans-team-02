@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
     <title>Car Loan Calculator</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -18,17 +18,17 @@
             </header>
         </div>
         <div class="form item1">
-            <form action="" onsubmit="return false">
+            <form action="" onsubmit="return false" autocomplete="off">
                 <div class="form-g">
-                    <label for="">Loan Amount:</label>
+                    <label for="car-price">Loan Amount:</label>
                     <input id="car-price" type="text" />
                 </div>
                 <div class="form-g">
-                    <label for="">Loan Term (months):</label>
+                    <label for="loan-term">Loan Term (months):</label>
                     <input id="loan-term" type="text" />
                 </div>
                 <div class="form-g">
-                    <label for="">Interest Rate (%):</label>
+                    <label for="interest-rate">Interest Rate (%):</label>
                     <input id="interest-rate" type="text" />
                 </div>
                 <div class="btns">
@@ -39,7 +39,7 @@
         </div>
         <div class="img-container item2">
             <h1 class="img-title">Get the loan of your dreams</h1>
-            <img src="./img/calc.svg" alt="" />
+            <img src="./img/calc.svg" alt="People doing math" />
         </div>
         <div class="results item3">
             <h4>Monthly Payments</h4>
@@ -49,8 +49,8 @@
             <h4>Total Amount</h4>
             <p id="totalAmount" class="title is-1">$</p>
         </div>
-        <div class="footer item4" style="background-color: magenta">
-            <footer>Footer</footer>
+        <div class="footer item4">
+            <footer><a href="https://github.com/chingu-voyages/v27-toucans-team-02">Chingu Voyage V27 - Toucans Team 02</a></footer>
         </div>
     </div>
 </body>
