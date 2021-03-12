@@ -1,17 +1,33 @@
 
 
 
-document.getElementById("loan-form").addEventListener("submit", (e) => {
-    const carPrice = document.getElementById("car-price").value;
-    e.preventDefault(); // To make sure the page doesn't reload when the submit button is pushed
-    if (carPrice != "") {
-        calculateResults();
-    }
-});
+const inputs = document.querySelectorAll('.input');
+const error = document.getElementById('alert');
 
-document.getElementById("loan-form").addEventListener("reset", resetOutputs);
+const buttons = () => {
+    const loanForm = document.getElementById("loan-form");
 
-function calculateResults() {
+    loanForm.addEventListener("submit", (e) => {
+        e.preventDefault(); // To make sure the page doesn't reload when the submit button is pushed
+        if (inputs[0].value !== "" && inputs[1].value !== "" && inputs[2].value !== "") {
+            calculateResults();
+        } else {
+            error.style.display = 'block';
+        }
+    });
+    
+    loanForm.addEventListener("reset", resetOutputs);
+}
+
+const hideAlert = () => {
+    inputs.forEach(x => {
+        x.addEventListener('input', () => {
+            error.style.display = 'none';
+        });
+    });
+}
+
+const calculateResults = () => {
 
     // Linking to inputs
 
@@ -47,14 +63,21 @@ function calculateResults() {
     document.getElementById("totalAmount").innerHTML = "$" + formatter.format(totalPayment);
 }
 
-
-function resetOutputs() {
+const resetOutputs = () => {
     const elements = document.querySelectorAll(".title");
     elements.forEach((el) => {
         el.textContent = "";
     });
+    error.style.display = 'none';
 }
 
+const app = () => {
+    buttons();
+    hideAlert();
+    calculateResults();
+    resetOutputs();
+};
+app();
 
 
 
@@ -63,7 +86,7 @@ function resetOutputs() {
 
 // waits for the DOM to load
 
-    
+
 //    let $submitButton = document.getElementById("submit-btn")
 
 //    $submitButton.addEventListener("click", function(e){
@@ -93,7 +116,7 @@ function resetOutputs() {
     // } else {
     //     elements.display = "block";
     // }
-    
+
     // elements.forEach((el) => {
     //     if (elements.display === "block") {
     //         el.classList.add("show");

@@ -76,6 +76,13 @@ form {
   width: 60%;
 }
 
+#alert {
+  display: none;
+  margin: -6%;
+  font-size: 3.5vw;
+  color: rgb(243, 115, 101)
+}
+
 /*===== Input Design =====*/
 input {
   background-color: transparent;
@@ -146,14 +153,13 @@ img {
 .btns {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
 }
 
 #submit-btn,
 #clear-btn {
   font-size: 2.8vw;
-  width: 20%;
   color: #ebeff0 !important;
   text-transform: uppercase;
   background: #c73d5b;
@@ -227,8 +233,8 @@ img {
       ". main calc ."
       ". . . ."
       "footer footer footer footer";
-    grid-template-columns: 8% 64% 20% 8%;
-    grid-template-rows: auto 5% auto 60% 5% auto;
+    grid-template-columns: auto 61% 23% auto;
+    grid-template-rows: auto 5% auto 60% 5% 2.5%;
   }
 
   .img-container {
@@ -249,6 +255,12 @@ img {
   input {
     font-size: 4vw;
   }
+  #alert {
+    margin: -6%;
+    font-size: 3vw;
+    color: rgb(243, 115, 101)
+  }
+
   #submit-btn,
   #clear-btn {
     font-size: 2.8vw;
@@ -283,7 +295,7 @@ img {
       ". . . ."
       "footer footer footer footer";
     grid-template-columns: auto 24% 24% auto;
-    grid-template-rows: 8% auto 38% 20% auto 5%;
+    grid-template-rows: 8% auto 38% 20% auto 2%;
     height: 100vh;
   }
 
@@ -310,6 +322,12 @@ img {
   input {
     font-size: 1.7vw;
   }
+  #alert {
+    margin: -8%;
+    font-size: 1.2vw;
+    color: rgb(243, 115, 101)
+  }
+
   #submit-btn,
   #clear-btn {
     font-size: 1.2vw;
