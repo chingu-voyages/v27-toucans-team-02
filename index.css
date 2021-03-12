@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #1e2855;
+  background-color: #162a61;
 }
 
 /*===== GRID Design =====*/
@@ -41,9 +41,9 @@ body {
 /*===== Form Section =====*/
 .form {
   height: 100%;
-  background: #3711b3;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #3711b3, #2c06a7);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #3711b3, #2c06a7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #6045d6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6d54da, #6045d6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6d54da, #6045d6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
 }
 
@@ -110,7 +110,7 @@ input:focus {
 .img-title {
   display: inline-block;
   margin-top: 3%;
-  color: #3711b3;
+  color: #6d54da;
   text-align: center;
   font-size: 8vw;
   margin-bottom: -7%;
@@ -162,6 +162,7 @@ img {
   background: #aa0428;
 }
 
+/*===== Footer =====*/
 footer {
   background-color: #f5f2f0;
   text-align: center;
@@ -169,7 +170,7 @@ footer {
 footer a {
   text-decoration: none;
   cursor: pointer;
-  color: #3711b3;
+  color: #6d54da;
 }
 
 /*===== Header Styles =====*/
