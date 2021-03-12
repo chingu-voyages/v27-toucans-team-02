@@ -100,3 +100,4 @@ function hideOutputs() {
         el.classList.add("hide");
       });
 }
+hideOutputs();
