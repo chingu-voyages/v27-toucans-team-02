@@ -26,11 +26,6 @@ document.getElementById("loan-form").addEventListener("reset", hideOutputs);
 
 
 // ** Second Try **
-function hideOutputs() {
-    const elements = document.querySelectorAll(".title");
-    elements.forEach((el) => {
-        el.classList.add("hide");
-      });
     // if (elements.display === "block") {
     //     elements.display = "none";
     // } else {
@@ -44,7 +39,7 @@ function hideOutputs() {
     //         el.classList.add("hide");
     //     }
     //   });
-}
+
 
 // ** Third Try **
 
@@ -53,14 +48,8 @@ function hideOutputs() {
 //     outputs.classList.add("hide");
 // }
 
-
 function calculateResults(e) {
-    // Removing the hide class and showing the results
 
-    const elements = document.querySelectorAll(".title");
-    elements.forEach((el) => {
-    el.classList.remove("hide");
-  });
     // Linking to inputs
 
     const carPrice = document.getElementById("car-price").value;
@@ -95,7 +84,18 @@ function calculateResults(e) {
 
     e.preventDefault(); // To make sure the page doesn't reload when the submit button is pushed
 
+        // Removing the hide class and showing the results
+
+        const elements = document.querySelectorAll(".title");
+        elements.forEach((el) => {
+        el.classList.remove("hide");
+      });
 }
 
 
-
+function hideOutputs() {
+    const elements = document.querySelectorAll(".title");
+    elements.forEach((el) => {
+        el.classList.add("hide");
+      });
+}
