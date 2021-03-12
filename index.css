@@ -21,6 +21,7 @@ body {
 }
 .item3 {
   grid-area: calc;
+  align-self: center;
 }
 .item4 {
   grid-area: footer;
@@ -37,7 +38,7 @@ body {
     ". . ."
     "footer footer footer";
   grid-template-columns: 6% auto 6%;
-  grid-template-rows: auto 10% auto 60% 20% 10% auto;
+  grid-template-rows: auto 10% auto 60% 25% 10% auto;
 }
 
 /*===== Form Section =====*/
@@ -81,6 +82,39 @@ form {
   margin: -6%;
   font-size: 3.5vw;
   color: rgb(243, 115, 101)
+}
+
+/*===== Buttons =====*/
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#submit-btn,
+#clear-btn {
+  font-size: 2.8vw;
+  color: #ebeff0 !important;
+  text-transform: uppercase;
+  background: #c73d5b;
+  padding: 3.5%;
+  border-radius: 5%;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+#submit-btn:hover,
+#clear-btn:hover {
+  background: #c01c40;
+}
+
+.hide {
+  display: hidden;
+  opacity: 0;
+}
+
+.show {
+  display: block;
 }
 
 /*===== Input Design =====*/
@@ -147,40 +181,12 @@ img {
   background-color: #f5f2f0;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 0 0 3% 3%;
+  text-align: center;
+}
+.results div p {
+  font-weight: 600;
 }
 
-/*===== Buttons =====*/
-.btns {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-}
-
-#submit-btn,
-#clear-btn {
-  font-size: 2.8vw;
-  color: #ebeff0 !important;
-  text-transform: uppercase;
-  background: #c73d5b;
-  padding: 3.5%;
-  border-radius: 5%;
-  border: none;
-  transition: all 0.4s ease 0s;
-}
-#submit-btn:hover,
-#clear-btn:hover {
-  background: #c01c40;
-}
-
-.hide {
-  display: hidden;
-  opacity: 0;
-}
-
-.show {
-  display: block;
-}
 
 /*===== Header Styles =====*/
 
