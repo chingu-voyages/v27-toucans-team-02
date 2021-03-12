@@ -167,6 +167,15 @@ img {
   background: #c01c40;
 }
 
+.hide {
+  display: hidden;
+  opacity: 0;
+}
+
+.show {
+  display: block;
+}
+
 /*===== Header Styles =====*/
 
 .mainHeader {

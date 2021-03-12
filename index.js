@@ -17,13 +17,39 @@
 //*Just to keep the track of the jQuery edits vs JS
 
 document.getElementById("loan-form").addEventListener("submit", calculateResults);
+document.getElementById("loan-form").addEventListener("reset", hideOutputs);
+// ** First Try **
+// function reset() {
+//     document.querySelectorAll(".title").innerHTML = 0;
+//     console.log("reset ran");
+// }
 
-function reset() {
-    document.querySelectorAll("h4").innerHTML = '';
-    console.log("reset ran");
-}
+
+// ** Second Try **
+    // if (elements.display === "block") {
+    //     elements.display = "none";
+    // } else {
+    //     elements.display = "block";
+    // }
+    
+    // elements.forEach((el) => {
+    //     if (elements.display === "block") {
+    //         el.classList.add("show");
+    //     } else {
+    //         el.classList.add("hide");
+    //     }
+    //   });
+
+
+// ** Third Try **
+
+// function reset() {
+//     const outputs = document.querySelectorAll(".is-1");
+//     outputs.classList.add("hide");
+// }
 
 function calculateResults(e) {
+
     // Linking to inputs
 
     const carPrice = document.getElementById("car-price").value;
@@ -58,7 +84,18 @@ function calculateResults(e) {
 
     e.preventDefault(); // To make sure the page doesn't reload when the submit button is pushed
 
+        // Removing the hide class and showing the results
+
+        const elements = document.querySelectorAll(".title");
+        elements.forEach((el) => {
+        el.classList.remove("hide");
+      });
 }
 
 
-
+function hideOutputs() {
+    const elements = document.querySelectorAll(".title");
+    elements.forEach((el) => {
+        el.classList.add("hide");
+      });
+}

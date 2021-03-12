@@ -18,13 +18,13 @@
             </header>
         </div>
         <div class="form item1">
-            <form action="">
+            <form action="" id="loan-form">
                 <div class="form-g">
                     <label for="">Loan Amount:</label>
                     <input id="car-price" type="text" />
                 </div>
                 <div class="form-g">
-                    <label for="">Loan Term (months):</label>
+                    <label for="">Loan Term (Years):</label>
                     <input id="loan-term" type="text" />
                 </div>
                 <div class="form-g">
@@ -32,8 +32,8 @@
                     <input id="interest-rate" type="text" />
                 </div>
                 <div class="btns">
-                    <button id="clear-btn" style="margin-right: 20%">Clear</button>
-                    <button id="submit-btn">Submit</button>
+                    <button id="clear-btn" type="reset" style="margin-right: 20%">Clear</button>
+                    <button id="submit-btn" type="submit">Submit</button>
                 </div>
             </form>
         </div>
@@ -45,7 +45,7 @@
             <h4>Monthly Payments</h4>
             <p id="monthlyPayment" class="title is-1">$</p>
             <h4>Total Interest</h4>
-            <p id="totalInterest" class="title is-1">$</p>
+            <p id="totalInterest" class="title is-1">%</p>
             <h4>Total Amount</h4>
             <p id="totalAmount" class="title is-1">$</p>
         </div>
@@ -54,7 +54,8 @@
         </div>
     </div>
 </body>
-<script src="https://unpkg.com/jquery"></script>
 <script src="index.js"></script>
+<script src="https://unpkg.com/jquery"></script>
+
 
 </html>
