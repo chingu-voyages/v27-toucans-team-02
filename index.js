@@ -77,10 +77,11 @@ function calculateResults(e) {
     const totalPayment = (monthly * calculatePayments).toFixed(2);
 
     //Display Results
+    const formatter = new Intl.NumberFormat('us-EN');
 
-    document.getElementById("monthlyPayment").innerHTML = "$" + monthlyPayment;
-    document.getElementById("totalInterest").innerHTML = totalInterest + "%";
-    document.getElementById("totalAmount").innerHTML = "$" + totalPayment;
+    document.getElementById("monthlyPayment").innerHTML = "$" + formatter.format(monthlyPayment);
+    document.getElementById("totalInterest").innerHTML = "$" + formatter.format(totalInterest);
+    document.getElementById("totalAmount").innerHTML = "$" + formatter.format(totalPayment);
 
     e.preventDefault(); // To make sure the page doesn't reload when the submit button is pushed
 
