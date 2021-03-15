@@ -2,7 +2,7 @@
 
 <h3> Auto Loan Calculator </h3>
 <br>
-<img src="https://media.giphy.com/media/9t2dWkvciZ90pAkoiD/giphy.gif" width="480" alt="a animated gif of the auto loan calculator" />
+<img src="https://media.giphy.com/media/9t2dWkvciZ90pAkoiD/giphy.gif" width="480" alt="an animated gif of the auto loan calculator" />
 
 #### Overview
 
